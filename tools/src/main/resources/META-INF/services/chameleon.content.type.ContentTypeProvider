@@ -1,0 +1,4 @@
+christophedelory.content.type.SpecificPlaylistTypeProvider
+chameleon.content.type.FileNameMapProvider
+chameleon.content.type.webapp.WebAppProvider
+chameleon.content.type.FileTypeMapProvider

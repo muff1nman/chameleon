@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.muff1nman.chameleon</groupId>
+    <artifactId>chameleon-parent</artifactId>
+    <version>1.1.2-SNAPSHOT</version>
+    <name>Chameleon</name>
+    <packaging>pom</packaging>
+
+    <url>https://github.com/muff1nman/chameleon</url>
+    <description>
+        Java library + tools allowing to parse/create/edit/convert/save almost any type of multimedia playlist. Supported formats: M3U/M3U8/M4U/RAM, ASX/WMX/WVX/WAX, WPL, XSPF, SMIL, PLS, B4S/BPL, RMP, KPL, PLIST, MPCPL, RSS/MediaRSS, Atom, Hypetape, PLA, PLP.
+    </description>
+    <inceptionYear>2008</inceptionYear>
+
+    <licenses>
+        <license>
+            <name>BSD License</name>
+            <url>http://en.wikisource.org/wiki/BSD_License</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Christophe Delory</name>
+            <id>cdelory</id>
+        </developer>
+        <developer>
+            <name>Jean-Marc Vanel</name>
+            <id>jmvanel</id>
+        </developer>
+    </developers>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/muff1nman/chameleon</developerConnection>
+        <connection>scm:git:https://github.com/muff1nman/chameleon</connection>
+        <url>https://github.com/muff1nman/chameleon</url>
+    </scm>
+
+    <modules>
+        <module>core</module>
+        <module>tools</module>
+        <module>playlists</module>
+        <module>contenttype/specificplaylist</module>
+        <module>contenttype/filename</module>
+        <module>contenttype/filetype</module>
+        <module>contenttype/webapp</module>
+        <module>metadata/sound</module>
+        <module>metadata/image</module>
+    </modules>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>core</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>contenttype-specificplaylist</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>contenttype-filename</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>contenttype-filetype</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>contenttype-webapp</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>metadata-sound</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>metadata-image</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-all</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-asx</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-atom</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-b4s</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-hypetape</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-kpl</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-m3u</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-mpcpl</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-pla</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-plist</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-plp</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-pls</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-rmp</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-rss</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-smil</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-wpl</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.muff1nman.chameleon</groupId>
+                <artifactId>playlist-xspf</artifactId>
+                <version>1.1.2-SNAPSHOT</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>analyze</id>
+                        <goals>
+                            <goal>analyze-only</goal>
+                        </goals>
+                        <configuration>
+                            <ignoreNonCompile>true</ignoreNonCompile>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <version>1.4</version>
+                <executions>
+                    <execution>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>create</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <shortRevisionLength>10</shortRevisionLength>
+                    <doCheck>false</doCheck>
+                    <doUpdate>false</doUpdate>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
