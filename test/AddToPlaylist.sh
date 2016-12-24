@@ -1,2 +1,2 @@
-#!/bin/sh
-java -cp ../tools/target/tools-1.1.2-SNAPSHOT.jar christophedelory.lizzy.AddToPlaylist $*
+#!/usr/bin/env sh
+java -cp ../tools/target/tools.jar chameleon.AddToPlaylist $*
