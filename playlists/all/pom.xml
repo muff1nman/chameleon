@@ -3,9 +3,10 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>playlists</artifactId>
+        <artifactId>chameleon-parent</artifactId>
         <groupId>com.github.muff1nman.chameleon</groupId>
         <version>1.1.2-SNAPSHOT</version>
+        <relativePath>../../</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -15,97 +16,97 @@
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-asx</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-atom</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-b4s</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-hypetape</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-kpl</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-m3u</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-mpcpl</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-pla</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-plist</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-plp</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-pls</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-rmp</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-rss</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-smil</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-wpl</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>playlist-xspf</artifactId>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
