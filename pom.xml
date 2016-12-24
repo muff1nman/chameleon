@@ -223,7 +223,7 @@
                 <version>1.4</version>
                 <executions>
                     <execution>
-                        <phase>process-resources</phase>
+                        <phase>initialize</phase>
                         <goals>
                             <goal>create</goal>
                         </goals>

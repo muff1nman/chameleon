@@ -72,7 +72,7 @@ public final class Transcode
      */
     public static void buildCurrentVersion() throws Exception
     {
-        final URL url = Version.class.getClassLoader().getResource("/VERSION"); // May throw SecurityException. Throws NullPointerException if resourceName is null.
+        final URL url = Version.class.getClassLoader().getResource("VERSION"); // May throw SecurityException. Throws NullPointerException if resourceName is null.
 
         final BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream())); // May throw IOException. Throws NullPointerException if url is null.
 
