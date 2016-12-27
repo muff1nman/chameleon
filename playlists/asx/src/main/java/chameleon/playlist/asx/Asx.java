@@ -89,7 +89,7 @@ public class Asx extends AsxOrEntryElement implements SpecificPlaylist, AsxEleme
     {
         // Marshal the ASX playlist.
         final StringWriter writer = new StringWriter();
-        final XmlSerializer serializer = XmlSerializer.getMapping("asx/src/main/java/christophedelory/playlist/asx"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/playlist/asx"); // May throw Exception.
         // Specifies whether XML documents (as generated at marshalling) should use indentation or not. Default is false.
         serializer.getMarshaller().setProperty("org.exolab.castor.indent", "true");
         serializer.marshal(this, writer, false); // May throw Exception.
@@ -361,7 +361,7 @@ public class Asx extends AsxOrEntryElement implements SpecificPlaylist, AsxEleme
      * @castor.field
      *  get-method="getAsxElements"
      *  set-method="addAsxElement"
-     *  type="christophedelory.playlist.asx.AsxElement"
+     *  type="chameleon.playlist.asx.AsxElement"
      *  collection="arraylist"
      * @castor.field-xml
      *  auto-naming="deriveByClass"

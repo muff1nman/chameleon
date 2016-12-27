@@ -75,7 +75,7 @@ public class PlistPlaylist implements SpecificPlaylist
     {
         // Marshal the PLIST playlist.
         final StringWriter writer = new StringWriter();
-        final XmlSerializer serializer = XmlSerializer.getMapping("christophedelory/plist"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/plist"); // May throw Exception.
         // Specifies whether XML documents (as generated at marshalling) should use indentation or not. Default is false.
         serializer.getMarshaller().setProperty("org.exolab.castor.indent", "true");
         serializer.marshal(_plist, writer, false); // May throw Exception.

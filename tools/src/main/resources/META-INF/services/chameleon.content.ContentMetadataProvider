@@ -1,6 +1,6 @@
-christophedelory.content.SoundMetadataProvider
+chameleon.content.SoundMetadataProvider
 chameleon.content.ImageMetadataProvider
 # Not currently building
-#christophedelory.content.FFMPEGMetadataProvider
+#chameleon.content.FFMPEGMetadataProvider
 # Commented: unable to make it work at the moment...
-#christophedelory.content.VLCMetadataProvider
+#chameleon.content.VLCMetadataProvider

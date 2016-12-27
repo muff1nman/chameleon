@@ -69,7 +69,7 @@ public class Layout extends Core
      * @castor.field
      *  get-method="getTopLayouts"
      *  set-method="addTopLayout"
-     *  type="christophedelory.playlist.smil.TopLayout"
+     *  type="chameleon.playlist.smil.TopLayout"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="topLayout"
@@ -129,7 +129,7 @@ public class Layout extends Core
      * @castor.field
      *  get-method="getRegions"
      *  set-method="addRegion"
-     *  type="christophedelory.playlist.smil.Region"
+     *  type="chameleon.playlist.smil.Region"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="region"
@@ -186,7 +186,7 @@ public class Layout extends Core
      * @castor.field
      *  get-method="getRegistrationPoints"
      *  set-method="addRegistrationPoint"
-     *  type="christophedelory.playlist.smil.RegistrationPoint"
+     *  type="chameleon.playlist.smil.RegistrationPoint"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="regPoint"

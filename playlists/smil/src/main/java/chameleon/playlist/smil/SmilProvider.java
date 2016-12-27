@@ -96,7 +96,7 @@ public class SmilProvider implements SpecificPlaylistProvider
         str = str.replaceAll("&amp;([a-zA-Z0-9#]+;)", "&$1"); // Shall not throw PatternSyntaxException.
 
         // Unmarshal the SMIL playlist.
-        final XmlSerializer serializer = XmlSerializer.getMapping("smil/src/main/java/christophedelory/playlist/smil"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/playlist/smil"); // May throw Exception.
         serializer.getUnmarshaller().setIgnoreExtraElements(true); // Many SMIL elements are not implemented yet.
 
         final StringReader reader = new StringReader(str);

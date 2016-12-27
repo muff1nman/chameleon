@@ -62,7 +62,7 @@ public abstract class AbstractTimingElement extends AbstractSmilElement
      * @castor.field
      *  get-method="getSmilElements"
      *  set-method="addSmilElement"
-     *  type="christophedelory.playlist.smil.AbstractSmilElement"
+     *  type="chameleon.playlist.smil.AbstractSmilElement"
      *  collection="arraylist"
      * @castor.field-xml
      *  auto-naming="deriveByClass"

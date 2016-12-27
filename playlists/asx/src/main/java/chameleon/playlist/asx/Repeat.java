@@ -100,7 +100,7 @@ public class Repeat extends AsxElement implements AsxElementContainer
      * @castor.field
      *  get-method="getAsxElements"
      *  set-method="addAsxElement"
-     *  type="christophedelory.playlist.asx.AsxElement"
+     *  type="chameleon.playlist.asx.AsxElement"
      *  collection="arraylist"
      * @castor.field-xml
      *  auto-naming="deriveByClass"

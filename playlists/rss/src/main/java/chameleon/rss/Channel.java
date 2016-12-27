@@ -527,7 +527,7 @@ public class Channel extends BaseMedia // I don't want regular RSS item to direc
      * @castor.field
      *  get-method="getCategories"
      *  set-method="addCategory"
-     *  type="christophedelory.rss.Category"
+     *  type="chameleon.rss.Category"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="category"
@@ -851,7 +851,7 @@ public class Channel extends BaseMedia // I don't want regular RSS item to direc
      * @castor.field
      *  get-method="getItems"
      *  set-method="addItem"
-     *  type="christophedelory.rss.Item"
+     *  type="chameleon.rss.Item"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="item"

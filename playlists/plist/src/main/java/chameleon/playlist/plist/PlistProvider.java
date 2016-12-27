@@ -100,7 +100,7 @@ public class PlistProvider implements SpecificPlaylistProvider
         str = str.replaceAll("&amp;([a-zA-Z0-9#]+;)", "&$1"); // Shall not throw PatternSyntaxException.
 
         // Unmarshal the playlist.
-        final XmlSerializer serializer = XmlSerializer.getMapping("christophedelory/plist"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/plist"); // May throw Exception.
         serializer.getUnmarshaller().setIgnoreExtraElements(false); // Force an error if unknown elements are found.
 
         final StringReader reader = new StringReader(str);

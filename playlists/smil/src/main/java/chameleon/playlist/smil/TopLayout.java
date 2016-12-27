@@ -114,7 +114,7 @@ public class TopLayout extends RootLayout
      * @castor.field
      *  get-method="getRegions"
      *  set-method="addRegion"
-     *  type="christophedelory.playlist.smil.Region"
+     *  type="chameleon.playlist.smil.Region"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="region"

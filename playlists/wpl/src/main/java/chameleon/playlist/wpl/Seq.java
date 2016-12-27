@@ -78,7 +78,7 @@ public class Seq
      * @castor.field
      *  get-method="getMedias"
      *  set-method="addMedia"
-     *  type="christophedelory.playlist.wpl.Media"
+     *  type="chameleon.playlist.wpl.Media"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="media"

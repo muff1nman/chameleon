@@ -153,7 +153,7 @@ public class Reference extends AbstractSmilElement
      * @castor.field
      *  get-method="getParams"
      *  set-method="addParam"
-     *  type="christophedelory.playlist.smil.Param"
+     *  type="chameleon.playlist.smil.Param"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="param"

@@ -96,7 +96,7 @@ public class Feed extends Source
      * @castor.field
      *  get-method="getEntries"
      *  set-method="addEntry"
-     *  type="christophedelory.atom.Entry"
+     *  type="chameleon.atom.Entry"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="entry"

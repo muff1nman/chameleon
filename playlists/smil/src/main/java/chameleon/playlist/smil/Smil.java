@@ -79,7 +79,7 @@ public class Smil extends Core implements SpecificPlaylist
     {
         // Marshal the SMIL playlist.
         final StringWriter writer = new StringWriter();
-        final XmlSerializer serializer = XmlSerializer.getMapping("smil/src/main/java/christophedelory/playlist/smil"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/playlist/smil"); // May throw Exception.
         // Specifies whether XML documents (as generated at marshalling) should use indentation or not. Default is false.
         serializer.getMarshaller().setProperty("org.exolab.castor.indent", "true");
         serializer.marshal(this, writer, false); // May throw Exception.

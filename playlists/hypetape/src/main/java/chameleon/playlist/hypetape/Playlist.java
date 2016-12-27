@@ -71,7 +71,7 @@ public class Playlist implements SpecificPlaylist
         // Marshal the playlist.
         final StringWriter writer = new StringWriter();
         final XmlSerializer serializer = XmlSerializer.getMapping(
-                "hypetape/src/main/java/christophedelory/playlist/hypetape"); // May throw Exception.
+                "chameleon/playlist/hypetape"); // May throw Exception.
         // Specifies whether XML documents (as generated at marshalling) should use indentation or not. Default is false.
         serializer.getMarshaller().setProperty("org.exolab.castor.indent", "true");
         serializer.marshal(this, writer, false); // May throw Exception.
@@ -133,7 +133,7 @@ public class Playlist implements SpecificPlaylist
      * @castor.field
      *  get-method="getTracks"
      *  set-method="addTrack"
-     *  type="christophedelory.playlist.hypetape.Track"
+     *  type="chameleon.playlist.hypetape.Track"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="track"

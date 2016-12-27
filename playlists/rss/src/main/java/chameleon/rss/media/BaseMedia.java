@@ -151,7 +151,7 @@ public class BaseMedia
      * @return a list of thumbnails. May be empty but not <code>null</code>.
      * @see #addMediaThumbnail
      * @castor.field
-     *  type="christophedelory.rss.media.Thumbnail"
+     *  type="chameleon.rss.media.Thumbnail"
      *  get-method="getMediaThumbnails"
      *  set-method="addMediaThumbnail"
      *  collection="arraylist"
@@ -275,7 +275,7 @@ public class BaseMedia
      * @since 0.92
      * @see #addMediaCategory
      * @castor.field
-     *  type="christophedelory.rss.media.Category"
+     *  type="chameleon.rss.media.Category"
      *  get-method="getMediaCategories"
      *  set-method="addMediaCategory"
      *  collection="arraylist"
@@ -309,7 +309,7 @@ public class BaseMedia
      * @return a list of media object ratings. May be empty but not <code>null</code>.
      * @see #addMediaRating
      * @castor.field
-     *  type="christophedelory.rss.media.Rating"
+     *  type="chameleon.rss.media.Rating"
      *  get-method="getMediaRatings"
      *  set-method="addMediaRating"
      *  collection="arraylist"
@@ -374,7 +374,7 @@ public class BaseMedia
      * @return a list of media object hashes. May be empty but not <code>null</code>.
      * @see #addMediaHash
      * @castor.field
-     *  type="christophedelory.rss.media.Hash"
+     *  type="chameleon.rss.media.Hash"
      *  get-method="getMediaHashes"
      *  set-method="addMediaHash"
      *  collection="arraylist"
@@ -408,7 +408,7 @@ public class BaseMedia
      * @return a list of credits. May be empty but not <code>null</code>.
      * @see #addMediaCredit
      * @castor.field
-     *  type="christophedelory.rss.media.Credit"
+     *  type="chameleon.rss.media.Credit"
      *  get-method="getMediaCredits"
      *  set-method="addMediaCredit"
      *  collection="arraylist"
@@ -468,7 +468,7 @@ public class BaseMedia
      * @return a list of texts. May be empty but not <code>null</code>.
      * @see #addMediaText
      * @castor.field
-     *  type="christophedelory.rss.media.Text"
+     *  type="chameleon.rss.media.Text"
      *  get-method="getMediaTexts"
      *  set-method="addMediaText"
      *  collection="arraylist"
@@ -502,7 +502,7 @@ public class BaseMedia
      * @return a list of restrictions. May be empty but not <code>null</code>.
      * @see #addMediaRestriction
      * @castor.field
-     *  type="christophedelory.rss.media.Restriction"
+     *  type="chameleon.rss.media.Restriction"
      *  get-method="getMediaRestrictions"
      *  set-method="addMediaRestriction"
      *  collection="arraylist"

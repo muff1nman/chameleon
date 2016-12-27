@@ -92,7 +92,7 @@ public class HypetapeProvider implements SpecificPlaylistProvider
 
         // Unmarshal the WPL playlist.
         final XmlSerializer serializer = XmlSerializer.getMapping(
-                "hypetape/src/main/java/christophedelory/playlist/hypetape"); // May throw Exception.
+                "chameleon/playlist/hypetape"); // May throw Exception.
         serializer.getUnmarshaller().setIgnoreExtraElements(false);
 
         final StringReader reader = new StringReader(str);

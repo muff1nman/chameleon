@@ -374,7 +374,7 @@ public class Entry extends AsxOrEntryElement
      * @castor.field
      *  get-method="getReferences"
      *  set-method="addReference"
-     *  type="christophedelory.playlist.asx.Reference"
+     *  type="chameleon.playlist.asx.Reference"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="ref"

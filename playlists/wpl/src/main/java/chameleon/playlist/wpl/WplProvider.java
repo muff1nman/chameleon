@@ -93,7 +93,7 @@ public class WplProvider implements SpecificPlaylistProvider
         str = str.replaceAll("&amp;([a-zA-Z0-9#]+;)", "&$1"); // Shall not throw PatternSyntaxException.
 
         // Unmarshal the WPL playlist.
-        final XmlSerializer serializer = XmlSerializer.getMapping("wpl/src/main/java/christophedelory/playlist/wpl"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/playlist/wpl"); // May throw Exception.
         serializer.getUnmarshaller().setIgnoreExtraElements(false); // Force an error if unknown elements are found.
 
         final StringReader reader = new StringReader(str);

@@ -85,7 +85,7 @@ public class Filter
      * @castor.field
      *  get-method="getFragments"
      *  set-method="addFragment"
-     *  type="christophedelory.playlist.wpl.Fragment"
+     *  type="chameleon.playlist.wpl.Fragment"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="fragment"

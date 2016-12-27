@@ -101,7 +101,7 @@ public class RmpProvider implements SpecificPlaylistProvider
 
         // Unmarshal the RMP playlist.
         final StringReader reader = new StringReader(str);
-        final JAXBContext jc = JAXBContext.newInstance("christophedelory.playlist.rmp"); // May throw JAXBException.
+        final JAXBContext jc = JAXBContext.newInstance("chameleon.playlist.rmp"); // May throw JAXBException.
         final Unmarshaller unmarshaller = jc.createUnmarshaller(); // May throw JAXBException.
         final SpecificPlaylist ret = (SpecificPlaylist) unmarshaller.unmarshal(reader); // May throw JAXBException, UnmarshalException. Shall not throw IllegalArgumentException.
         ret.setProvider(this);

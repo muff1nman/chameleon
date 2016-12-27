@@ -68,7 +68,7 @@ public class WinampXML implements SpecificPlaylist
     {
         // Marshal the B4S playlist.
         final StringWriter writer = new StringWriter();
-        final XmlSerializer serializer = XmlSerializer.getMapping("b4s/src/main/java/christophedelory/playlist/b4s"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/playlist/b4s"); // May throw Exception.
         // Specifies whether XML documents (as generated at marshalling) should use indentation or not. Default is false.
         serializer.getMarshaller().setProperty("org.exolab.castor.indent", "true");
         serializer.marshal(this, writer, false); // May throw Exception.

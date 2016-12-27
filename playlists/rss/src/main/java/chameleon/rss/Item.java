@@ -292,7 +292,7 @@ public class Item extends BaseMedia // I don't want regular RSS item to directly
      * @castor.field
      *  get-method="getCategories"
      *  set-method="addCategory"
-     *  type="christophedelory.rss.Category"
+     *  type="chameleon.rss.Category"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="category"
@@ -533,7 +533,7 @@ public class Item extends BaseMedia // I don't want regular RSS item to directly
      * @return a list of media contents. May be empty but not <code>null</code>.
 	 * @see #addMediaContent
      * @castor.field
-     *  type="christophedelory.rss.media.Content"
+     *  type="chameleon.rss.media.Content"
      *  get-method="getMediaContents"
      *  set-method="addMediaContent"
      *  collection="arraylist"
@@ -551,7 +551,7 @@ public class Item extends BaseMedia // I don't want regular RSS item to directly
      * @return a list of media groups. May be empty but not <code>null</code>.
 	 * @see #addMediaGroup
      * @castor.field
-     *  type="christophedelory.rss.media.Group"
+     *  type="chameleon.rss.media.Group"
      *  get-method="getMediaGroups"
      *  set-method="addMediaGroup"
      *  collection="arraylist"

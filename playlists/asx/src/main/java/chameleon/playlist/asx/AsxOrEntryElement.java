@@ -369,7 +369,7 @@ public class AsxOrEntryElement extends AsxElement
      * @castor.field
      *  get-method="getParams"
      *  set-method="addParam"
-     *  type="christophedelory.playlist.asx.Param"
+     *  type="chameleon.playlist.asx.Param"
      *  collection="hashtable"
      * @castor.field-xml
      *  name="param"
@@ -407,7 +407,7 @@ public class AsxOrEntryElement extends AsxElement
      * @castor.field
      *  get-method="getLogURLs"
      *  set-method="addLogURL"
-     *  type="christophedelory.playlist.asx.LogURL"
+     *  type="chameleon.playlist.asx.LogURL"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="logurl"

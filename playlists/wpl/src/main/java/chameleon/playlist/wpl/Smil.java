@@ -77,7 +77,7 @@ public class Smil implements SpecificPlaylist
     {
         // Marshal the SMIL playlist.
         final StringWriter writer = new StringWriter();
-        final XmlSerializer serializer = XmlSerializer.getMapping("wpl/src/main/java/christophedelory/playlist/wpl"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/playlist/wpl"); // May throw Exception.
         // Specifies whether XML documents (as generated at marshalling) should use indentation or not. Default is false.
         serializer.getMarshaller().setProperty("org.exolab.castor.indent", "true");
         serializer.marshal(this, writer, false); // May throw Exception.

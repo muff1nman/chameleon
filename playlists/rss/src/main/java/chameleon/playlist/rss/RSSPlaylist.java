@@ -73,7 +73,7 @@ public class RSSPlaylist implements SpecificPlaylist
     {
         // Marshal the RSS document.
         final StringWriter writer = new StringWriter();
-        final XmlSerializer serializer = XmlSerializer.getMapping("christophedelory/rss"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/rss"); // May throw Exception.
         // Specifies whether XML documents (as generated at marshalling) should use indentation or not. Default is false.
         serializer.getMarshaller().setProperty("org.exolab.castor.indent", "true");
         //serializer.getMarshaller().setNamespaceMapping("", "http://purl.org/rss/1.0/modules/content/");

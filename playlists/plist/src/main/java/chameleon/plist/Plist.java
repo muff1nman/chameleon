@@ -78,7 +78,7 @@ public class Plist
      * @castor.field
      *  get-method="getPlistObject"
      *  set-method="setPlistObject"
-     *  type="christophedelory.plist.PlistObject"
+     *  type="chameleon.plist.PlistObject"
      * @castor.field-xml
      *  auto-naming="deriveByClass"
      *  node="element"

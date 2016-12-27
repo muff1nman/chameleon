@@ -100,7 +100,7 @@ public class Dict extends PlistObject
      * @castor.field
      *  get-method="getKeysAndObjects"
      *  set-method="addKeyOrObject"
-     *  type="christophedelory.plist.PlistObject"
+     *  type="chameleon.plist.PlistObject"
      *  collection="arraylist"
      * @castor.field-xml
      *  auto-naming="deriveByClass"

@@ -95,7 +95,7 @@ public class XspfProvider implements SpecificPlaylistProvider
         str = str.replaceAll("&amp;([a-zA-Z0-9#]+;)", "&$1"); // Shall not throw PatternSyntaxException.
 
         // Unmarshal the WPL playlist.
-        final XmlSerializer serializer = XmlSerializer.getMapping("xspf/src/main/java/christophedelory/playlist/xspf"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/playlist/xspf"); // May throw Exception.
         serializer.getUnmarshaller().setIgnoreExtraElements(true);
 
         final StringReader reader = new StringReader(str);

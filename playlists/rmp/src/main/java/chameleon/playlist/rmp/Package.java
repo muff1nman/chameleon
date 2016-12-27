@@ -135,7 +135,7 @@ public class Package implements SpecificPlaylist
         }
 
         // Marshal the playlist.
-        final JAXBContext jc = JAXBContext.newInstance("christophedelory.playlist.rmp"); // May throw JAXBException.
+        final JAXBContext jc = JAXBContext.newInstance("chameleon.playlist.rmp"); // May throw JAXBException.
         final Marshaller marshaller = jc.createMarshaller(); // May throw JAXBException.
         marshaller.setProperty(Marshaller.JAXB_ENCODING, enc); // May throw PropertyException. Shall not throw IllegalArgumentException.
         // Specifies whether XML documents (as generated at marshalling) should use indentation or not. Default is false.

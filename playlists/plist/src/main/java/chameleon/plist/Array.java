@@ -47,7 +47,7 @@ public class Array extends PlistObject
      * @castor.field
      *  get-method="getPlistObjects"
      *  set-method="addPlistObject"
-     *  type="christophedelory.plist.PlistObject"
+     *  type="chameleon.plist.PlistObject"
      *  collection="arraylist"
      * @castor.field-xml
      *  auto-naming="deriveByClass"

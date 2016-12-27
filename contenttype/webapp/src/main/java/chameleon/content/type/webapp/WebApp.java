@@ -53,7 +53,7 @@ public class WebApp
 	 * @return a list of mappings. May be empty but not <code>null</code>.
 	 * @see #addMimeMapping
      * @castor.field
-	 *  type="christophedelory.content.type.webapp.MimeMapping"
+	 *  type="chameleon.content.type.webapp.MimeMapping"
 	 *  get-method="getMimeMappings"
 	 *  set-method="addMimeMapping"
      *  collection="arraylist"

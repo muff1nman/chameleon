@@ -70,7 +70,7 @@ public class Head extends Core
      * @castor.field
      *  get-method="getMetas"
      *  set-method="addMeta"
-     *  type="christophedelory.playlist.smil.Meta"
+     *  type="chameleon.playlist.smil.Meta"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="meta"

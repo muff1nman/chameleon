@@ -133,7 +133,7 @@ public class Head
      * @castor.field
      *  get-method="getMetas"
      *  set-method="addMeta"
-     *  type="christophedelory.playlist.wpl.Meta"
+     *  type="chameleon.playlist.wpl.Meta"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="meta"

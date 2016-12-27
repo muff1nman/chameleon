@@ -94,7 +94,7 @@ public class B4sProvider implements SpecificPlaylistProvider
         str = str.replaceAll("&amp;([a-zA-Z0-9#]+;)", "&$1"); // Shall not throw PatternSyntaxException.
 
         // Unmarshal the B4S playlist.
-        final XmlSerializer serializer = XmlSerializer.getMapping("b4s/src/main/java/christophedelory/playlist/b4s"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/playlist/b4s"); // May throw Exception.
         serializer.getUnmarshaller().setIgnoreExtraElements(false); // Force an error if unknown elements are found.
 
         final StringReader reader = new StringReader(str);

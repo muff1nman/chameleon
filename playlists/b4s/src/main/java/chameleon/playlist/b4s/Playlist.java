@@ -144,7 +144,7 @@ public class Playlist
      * @castor.field
      *  get-method="getEntries"
      *  set-method="addEntry"
-     *  type="christophedelory.playlist.b4s.Entry"
+     *  type="chameleon.playlist.b4s.Entry"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="entry"

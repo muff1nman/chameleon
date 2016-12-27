@@ -50,12 +50,12 @@ public class WebAppProvider implements ContentTypeProvider
         try
         {
             final URL url = getClass().getClassLoader().getResource(
-                    "contenttype/webapp/src/main/java/christophedelory/content/type/webapp/web.xml"); // May throw SecurityException.
+                    "chameleon/content/type/webapp/web.xml"); // May throw SecurityException.
 
             if (url != null)
             {
                 _webApp = (WebApp) XmlSerializer.getMapping(
-                        "contenttype/webapp/src/main/java/christophedelory/content/type/webapp").unmarshal(url); // May throw Exception.
+                        "chameleon/content/type/webapp").unmarshal(url); // May throw Exception.
             }
         }
         catch (Exception e)

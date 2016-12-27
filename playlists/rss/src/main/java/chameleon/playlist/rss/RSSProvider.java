@@ -107,7 +107,7 @@ public class RSSProvider implements SpecificPlaylistProvider
         str = str.replaceAll("&amp;([a-zA-Z0-9#]+;)", "&$1"); // Shall not throw PatternSyntaxException.
 
         // Unmarshal the SMIL playlist.
-        final XmlSerializer serializer = XmlSerializer.getMapping("christophedelory/rss"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/rss"); // May throw Exception.
         serializer.getUnmarshaller().setIgnoreExtraElements(true);
 
         final StringReader reader = new StringReader(str);

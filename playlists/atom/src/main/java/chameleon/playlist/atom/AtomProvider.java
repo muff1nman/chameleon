@@ -107,7 +107,7 @@ public class AtomProvider implements SpecificPlaylistProvider
         str = str.replace("xmlns=\"http://www.w3.org/2005/Atom\"", "");
 
         // Unmarshal the SMIL playlist.
-        final XmlSerializer serializer = XmlSerializer.getMapping("christophedelory/atom"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/atom"); // May throw Exception.
         serializer.getUnmarshaller().setIgnoreExtraElements(true);
 
         final StringReader reader = new StringReader(str);

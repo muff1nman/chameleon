@@ -144,7 +144,7 @@ public class Playlist implements SpecificPlaylist
     {
         // Marshal the playlist.
         final StringWriter writer = new StringWriter();
-        final XmlSerializer serializer = XmlSerializer.getMapping("xspf/src/main/java/christophedelory/playlist/xspf"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/playlist/xspf"); // May throw Exception.
         // Specifies whether XML documents (as generated at marshalling) should use indentation or not. Default is false.
         serializer.getMarshaller().setProperty("org.exolab.castor.indent", "true");
         serializer.marshal(this, writer, false); // May throw Exception.
@@ -577,7 +577,7 @@ public class Playlist implements SpecificPlaylist
      * @castor.field
      *  get-method="getLinks"
      *  set-method="addLink"
-     *  type="christophedelory.playlist.xspf.Link"
+     *  type="chameleon.playlist.xspf.Link"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="link"
@@ -612,7 +612,7 @@ public class Playlist implements SpecificPlaylist
      * @castor.field
      *  get-method="getMetas"
      *  set-method="addMeta"
-     *  type="christophedelory.playlist.xspf.Meta"
+     *  type="chameleon.playlist.xspf.Meta"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="meta"
@@ -648,7 +648,7 @@ public class Playlist implements SpecificPlaylist
      * @castor.field
      *  get-method="getTracks"
      *  set-method="addTrack"
-     *  type="christophedelory.playlist.xspf.Track"
+     *  type="chameleon.playlist.xspf.Track"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="track"

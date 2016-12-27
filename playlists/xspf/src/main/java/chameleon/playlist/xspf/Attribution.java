@@ -58,7 +58,7 @@ public class Attribution
      * @castor.field
      *  get-method="getStringContainers"
      *  set-method="addStringContainer"
-     *  type="christophedelory.playlist.xspf.StringContainer"
+     *  type="chameleon.playlist.xspf.StringContainer"
      *  collection="arraylist"
      * @castor.field-xml
      *  auto-naming="deriveByClass"

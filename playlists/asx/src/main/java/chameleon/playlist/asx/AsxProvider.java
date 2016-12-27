@@ -199,7 +199,7 @@ public class AsxProvider implements SpecificPlaylistProvider
         str = sb.toString();
 
         // Unmarshal the ASX playlist.
-        final XmlSerializer serializer = XmlSerializer.getMapping("asx/src/main/java/christophedelory/playlist/asx"); // May throw Exception.
+        final XmlSerializer serializer = XmlSerializer.getMapping("chameleon/playlist/asx"); // May throw Exception.
         serializer.getUnmarshaller().setIgnoreExtraElements(false); // Force an error if unknown elements are found.
 
         final StringReader reader = new StringReader(str);

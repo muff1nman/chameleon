@@ -277,7 +277,7 @@ public class Fragment
      * @castor.field
      *  get-method="getArguments"
      *  set-method="addArgument"
-     *  type="christophedelory.playlist.wpl.Argument"
+     *  type="chameleon.playlist.wpl.Argument"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="argument"

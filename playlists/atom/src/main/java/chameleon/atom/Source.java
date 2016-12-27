@@ -105,7 +105,7 @@ public class Source extends Common
      * @castor.field
      *  get-method="getAuthors"
      *  set-method="addAuthor"
-     *  type="christophedelory.atom.Person"
+     *  type="chameleon.atom.Person"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="author"
@@ -140,7 +140,7 @@ public class Source extends Common
      * @castor.field
      *  get-method="getCategories"
      *  set-method="addCategory"
-     *  type="christophedelory.atom.Category"
+     *  type="chameleon.atom.Category"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="category"
@@ -175,7 +175,7 @@ public class Source extends Common
      * @castor.field
      *  get-method="getContributors"
      *  set-method="addContributor"
-     *  type="christophedelory.atom.Person"
+     *  type="chameleon.atom.Person"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="contributor"
@@ -289,7 +289,7 @@ public class Source extends Common
      * @castor.field
      *  get-method="getLinks"
      *  set-method="addLink"
-     *  type="christophedelory.atom.Link"
+     *  type="chameleon.atom.Link"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="link"

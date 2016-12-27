@@ -422,7 +422,7 @@ public class Track extends Attribution
      * @castor.field
      *  get-method="getLinks"
      *  set-method="addLink"
-     *  type="christophedelory.playlist.xspf.Link"
+     *  type="chameleon.playlist.xspf.Link"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="link"
@@ -457,7 +457,7 @@ public class Track extends Attribution
      * @castor.field
      *  get-method="getMetas"
      *  set-method="addMeta"
-     *  type="christophedelory.playlist.xspf.Meta"
+     *  type="chameleon.playlist.xspf.Meta"
      *  collection="arraylist"
      * @castor.field-xml
      *  name="meta"

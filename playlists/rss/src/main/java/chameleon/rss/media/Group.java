@@ -64,7 +64,7 @@ public class Group extends BaseMedia
      * @return a list of media contents. May be empty but not <code>null</code>.
      * @see #addMediaContent
      * @castor.field
-     *  type="christophedelory.rss.media.Content"
+     *  type="chameleon.rss.media.Content"
      *  get-method="getMediaContents"
      *  set-method="addMediaContent"
      *  collection="arraylist"
