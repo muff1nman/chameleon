@@ -47,7 +47,8 @@
         <module>contenttype/specificplaylist</module>
         <module>contenttype/filename</module>
         <module>contenttype/filetype</module>
-        <module>contenttype/webapp</module>
+        <!-- Needs mapping.xml generated, and examining into if this apporach is actually useful -->
+        <!--<module>contenttype/webapp</module>-->
         <module>metadata/sound</module>
         <module>metadata/image</module>
     </modules>

@@ -40,6 +40,30 @@
                 </configuration>
             </plugin>
         </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.8</version>
+                    <executions>
+                        <execution>
+                            <phase>generate-sources</phase>
+                            <configuration>
+                                <target>
+                                    <property name="ant.lib.path" value="${project.basedir}/../ant-lib" />
+                                    <property name="mapping.out.dir" value="${project.build.outputDirectory}/${playlist.package}" />
+                                    <property name="src.in.dir" value="${project.build.sourceDirectory}/${playlist.package}" />
+                                    <ant antfile="${project.basedir}/../castor.xml"/>
+                                </target>
+                            </configuration>
+                            <goals>
+                                <goal>run</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
     <dependencies>
