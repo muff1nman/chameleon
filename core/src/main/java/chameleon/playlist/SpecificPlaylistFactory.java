@@ -24,6 +24,7 @@
  */
 package chameleon.playlist;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.InputStream;
 import java.io.IOException;
@@ -107,29 +108,36 @@ public final class SpecificPlaylistFactory
      */
     public SpecificPlaylist readFrom(final URL url) throws IOException
     {
-        SpecificPlaylist ret = null;
+        final URLConnection urlConnection = url.openConnection(); //  Throws NullPointerException if url is null. May throw IOException.
+        urlConnection.setAllowUserInteraction(false); // Shall not throw IllegalStateException.
+        urlConnection.setConnectTimeout(10000); // Shall not throw IllegalArgumentException.
+        urlConnection.setDoInput(true); // Shall not throw IllegalStateException.
+        urlConnection.setDoOutput(false); // Shall not throw IllegalStateException.
+        urlConnection.setReadTimeout(60000); // Shall not throw IllegalArgumentException.
+        urlConnection.setUseCaches(true); // Shall not throw IllegalStateException.
 
+        urlConnection.connect(); // May throw SocketTimeoutException, IOException.
+
+        final String contentEncoding = urlConnection.getContentEncoding(); // May be null.
+        //final int contentLength = urlConnection.getContentLength(); // May be negative.
+        //final String contentType = urlConnection.getContentType(); // May be null.
+
+        final InputStream in = urlConnection.getInputStream(); // May throw IOException, UnknownServiceException.
+
+        return readFrom(in, contentEncoding);
+    }
+
+    public SpecificPlaylist readFrom(InputStream in, String contentEncoding) throws IOException {
+        byte[] bytes = org.apache.commons.io.IOUtils.toByteArray(in);
+
+        SpecificPlaylist ret = null;
         for (SpecificPlaylistProvider service : _serviceLoader)
         {
-            final URLConnection urlConnection = url.openConnection(); //  Throws NullPointerException if url is null. May throw IOException.
-            urlConnection.setAllowUserInteraction(false); // Shall not throw IllegalStateException.
-            urlConnection.setConnectTimeout(10000); // Shall not throw IllegalArgumentException.
-            urlConnection.setDoInput(true); // Shall not throw IllegalStateException.
-            urlConnection.setDoOutput(false); // Shall not throw IllegalStateException.
-            urlConnection.setReadTimeout(60000); // Shall not throw IllegalArgumentException.
-            urlConnection.setUseCaches(true); // Shall not throw IllegalStateException.
-
-            urlConnection.connect(); // May throw SocketTimeoutException, IOException.
-
-            final String contentEncoding = urlConnection.getContentEncoding(); // May be null.
-            //final int contentLength = urlConnection.getContentLength(); // May be negative.
-            //final String contentType = urlConnection.getContentType(); // May be null.
-
-            final InputStream in = urlConnection.getInputStream(); // May throw IOException, UnknownServiceException.
 
             try
             {
-                ret = service.readFrom(in, contentEncoding, _logger); // May throw Exception. Shall not throw NullPointerException because of in.
+                InputStream temp = new ByteArrayInputStream(bytes);
+                ret = service.readFrom(temp, contentEncoding, _logger); // May throw Exception. Shall not throw NullPointerException because of in.
                 // Returns it even if null.
                 break;
             }
@@ -138,11 +146,11 @@ public final class SpecificPlaylistFactory
                 // Ignore it.
                 if (_logger.isTraceEnabled())
                 {
-                    _logger.trace("Playlist provider " + service.getId() + " cannot unmarshal <" + url + ">", e);
+                    _logger.trace("Playlist provider " + service.getId() + " cannot unmarshal", e);
                 }
                 else if (_logger.isDebugEnabled())
                 {
-                    _logger.debug("Playlist provider " + service.getId() + " cannot unmarshal <" + url + ">: " + e);
+                    _logger.debug("Playlist provider " + service.getId() + " cannot unmarshal " + e);
                 }
             }
             finally
