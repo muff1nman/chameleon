@@ -50,11 +50,11 @@
             <artifactId>contenttype-specificplaylist</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>com.github.muff1nman.chameleon</groupId>
-            <artifactId>contenttype-webapp</artifactId>
-            <scope>runtime</scope>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.github.muff1nman.chameleon</groupId>-->
+            <!--<artifactId>contenttype-webapp</artifactId>-->
+            <!--<scope>runtime</scope>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>com.github.muff1nman.chameleon</groupId>
             <artifactId>contenttype-filename</artifactId>
